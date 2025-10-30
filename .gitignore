@@ -1,3 +1,37 @@
+# Removed non-mlkem-measurement directories
+PQClean/
+mbedtls/
+mlkem-native/
 report/
 
+# Build artifacts and generated files
+build/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.ninja
+cmake_install.cmake
+CMakeCache.txt
+compile_commands.json
+
+# ESP-IDF generated files
+sdkconfig
+sdkconfig.old
+.ninja_deps
+.ninja_log
+.bin_timestamp
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System files
 .DS_Store
+.git/
+.gitignore

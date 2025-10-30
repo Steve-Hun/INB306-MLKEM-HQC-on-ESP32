@@ -1,0 +1,9 @@
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ=240
+CONFIG_FREERTOS_IDLE_TASK_STACKSIZE=3072
+# Watchdog configuration for long-running benchmarks
+# Don't check idle tasks - they get starved during long crypto operations
+CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0=n
+CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU1=n
+# Set reasonable timeout for actual task monitoring
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=30

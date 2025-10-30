@@ -1,0 +1,12 @@
+menu "Benchmarks"
+
+config BENCH_MENU
+    bool "Enable UART scenario menu"
+    default y
+    help
+      When enabled, the app shows a UART menu at startup to select a scenario.
+      Disable for final research runs to keep code layout minimal and avoid
+      any potential impact on timing (the menu is removed at compile time).
+
+endmenu
+
